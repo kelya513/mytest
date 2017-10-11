@@ -9,14 +9,10 @@ function recursionTask4() {
 
     arr_copy = arr.slice();
     result = sumArrRec(arr_copy);
-    alert('исходный массив: '+ arr + '. Результат: ' + result);
+    alert('Исходный массив: '+ arr + '. Результат: ' + result);
 
 };
 
 function sumArrRec(arr) {
-    if (arr.length == 1){
-        return arr[0];
-    } else {
-        return arr.pop() + sumArrRec(arr)
-    }
-}
+    return (arr.length == 1) ? arr[0] : arr.pop() + sumArrRec(arr);
+};

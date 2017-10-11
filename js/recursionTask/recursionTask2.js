@@ -4,16 +4,13 @@ function recursionTask2() {
     var result;
     if (a > 0 && b > 0){
         result = (a > b) ? gcdPos(a,b) : gcdPos(b,a);
-        alert('результат вычисления НОД: ' + result);
+        alert('Результат вычисления НОД: ' + result);
     } else {
         alert('Введите позитивные числа');
     }
 };
 
+//Алгоритм Евклида
 function gcdPos(a,b){
-    console.log(a +' '+ b);
-    if ( b == 0) {
-        return a;
-    }
-    return gcdPos(b, a % b);
+    return ( b == 0) ?  a : gcdPos(b, a % b);
 };

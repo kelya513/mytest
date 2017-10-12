@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical JS</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+</head>
+<body>
+<header>
+    <h1>Практика по JS</h1>
+</header>
+<div class="wrapper">
+    <div class="block_tasks block_function">
+        <h3> JavaScript Function </h3>
+        <h5>
+            <a href="https://www.w3resource.com/javascript-exercises/javascript-functions-exercises.php" target="_blank">
+                сайт с задачами</a>
+        </h5>
+        <div class="block_tasks_task">
+            <div class="block_tasks_task-tittle">
+                <a href="js/recursionTask/functionTask1.js" target="_blank">Функция для "переворацивания" числа</a>
+            </div>
+            <div class="block_tasks_task-body">
+                <label>Введите число</label>
+                <input id="task_1" type="text" value="45785">
+                <button onclick="functionTask1();">Рассчитать</button>
+            </div>
+        </div>
+
+        <div class="block_tasks_task">
+            <div class="block_tasks_task-tittle">
+                <a href="js/recursionTask/functionTask2.js" target="_blank">Является ли строка полиндромом:</a>
+            </div>
+            <div class="block_tasks_task-body">
+                <label>Введите строку</label>
+                <input id="task_2" type="text" value="А роза упала на лапу Азора." style="width: 50%"> //А,  роза ()-упала на. лапу Азора.
+                <button onclick="functionTask2();">Проверка</button>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+<!--functionTask-->
+    <script src="js/functionTask/functionTask1.js"></script>
+    <script src="js/functionTask/functionTask2.js"></script>
+<!--/functionTask-->
+
+</body>
+</html>

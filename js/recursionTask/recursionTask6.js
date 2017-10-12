@@ -4,7 +4,7 @@ function recursionTask6() {
     if ( n > 0){
         alert('Первые : ' + n + ' чисел Фибоначи: ' + fiboSeriesRec(n) );
     } else {
-        alert('Неккоректрые данные');
+        alert('Некорректные данные');
     }
 };
 

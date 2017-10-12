@@ -5,7 +5,7 @@ function recursionTask5() {
     if ( +arr[0] > 0 && +arr[1] > 0){
         alert('Результат вычисления числа в степени: ' + expNum(+arr[0], +arr[1]) );
     } else {
-        alert('Неккоректрые данные');
+        alert('Некорректные данные');
     }
 };
 

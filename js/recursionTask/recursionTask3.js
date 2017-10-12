@@ -6,7 +6,7 @@ function recursionTask3() {
         result = range(a,b);
         alert('Диапазон: ' + result);
     } else {
-        alert('Неккоректрые данные');
+        alert('Некорректные данные');
     }
 };
 

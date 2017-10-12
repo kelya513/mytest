@@ -6,7 +6,7 @@ function recursionTask7() {
         result =  checkEvenNumbRec(n) ? 'четное' : 'нечетное' ;
         alert('Число ' + result );
     } else {
-        alert('Неккоректрые данные');
+        alert('Некорректные данные');
     }
 };
 

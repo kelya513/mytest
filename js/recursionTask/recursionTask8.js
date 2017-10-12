@@ -1,5 +1,5 @@
 Array.prototype.binarySearch = function(search) {
-    if (this.length == 0 || (this.length==1 && this[0] != search)) {
+    if (this.length == 0 || (this.length==1 && this[0] != search)) { //выход из рекурсии, если нет искомого елемента
         return NaN;
     }
     var mid = parseInt(this.length/ 2);
@@ -24,3 +24,20 @@ function recursionTask8() {
         alert('Некорректные данные');
     }
 };
+
+
+// function binarySearch(arr, search, first, last) {
+//     if (arr.length == 0 || search < arr[first] || search > arr[last - 1] ) {
+//         return null;
+//     }
+//     var mid = parseInt(first + (last - first) / 2);
+//
+//     if (arr[mid] == search){
+//         return mid;
+//     }
+//     if (arr[mid] < search){
+//         return binarySearch(arr, search, mid, last);
+//     } else {
+//         return binarySearch(arr, search, first, mid);
+//     }
+// };

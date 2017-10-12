@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practical JS</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+</head>
+<body>
+<header>
+    <h1>Практика по JS</h1>
+</header>
+<div class="wrapper">
+    <div class="block_tasks block_recursion">
+
+        <div class="block_tasks_task">
+            <div class="block_tasks_task-tittle">
+                <p>
+                    Напиши функцию создания генератора sequence(start, step).<br>
+                    Она при вызове возвращает другую функцию-генератор, которая при каждом вызове дает число на 1 больше, и так до бесконечности.<br>
+                    Начальное число, с которого начинать отсчет, и шаг, задается при создании генератора. Шаг можно не указывать, тогда он будет равен одному. Начальное значение по умолчанию равно 0.<br>
+                    Генераторов можно создать сколько угодно.<br>
+                </p>
+                <a href="js/first3Task/task1.js" target="_blank">скрипт задачи</a>
+            </div>
+            <div class="block_tasks_task-body">
+                <p>
+                    в консоле установка var gen = sequence(10, 3);<br>
+                    последующие вызовы: gen();
+                </p>
+            </div>
+        </div>
+
+        <div class="block_tasks_task">
+            <div class="block_tasks_task-tittle">
+                <p>
+                    Нужна функция take(gen, x) которая вызывает функцию gen заданное число ( x ) раз и возвращает массив с результатами вызовов.<br>
+                </p>
+                <a href="js/first3Task/task2.js" target="_blank">скрипт задачи</a>
+            </div>
+            <div class="block_tasks_task-body">
+                в консоле установка var gen2 = sequence(0, 2); //из предыдущей задачи<br>
+                вызов take(gen2, 5)
+            </div>
+        </div>
+
+        <div class="block_tasks_task">
+            <div class="block_tasks_task-tittle">
+                <p>
+                    3.Напиши функцию map(fn, array), которая принимает на вход функцию и массив, и обрабатывает каждый элемент массива этой функцией, возвращая новый массив.<br>
+                    (Для примера функция возведения в квадрат)
+                </p>
+                <a href="js/first3Task/task3.js" target="_blank">скрипт задачи</a>
+            </div>
+            <div class="block_tasks_task-body">
+                в консоле вызов map(square, [1, 2, 3, 4]))<br>
+                где square это предаваемая функция для возведения в квадрат
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--recursionTask-->
+    <script src="js/first3Task/task1.js"></script>
+    <script src="js/first3Task/task2.js"></script>
+    <script src="js/first3Task/task3.js"></script>
+<!--/recursionTask-->
+
+</body>
+</html>

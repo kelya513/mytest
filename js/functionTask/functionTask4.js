@@ -3,7 +3,7 @@ function functionTask4() {
     if (str == ""){
         alert('Введите строку');
     } else {
-        alert('проверка на палиндром  ' + sortAlphabetizing(str));
+        alert('отсортированная строка: ' + sortAlphabetizing(str));
     }
 }
 

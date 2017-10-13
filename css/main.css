@@ -30,3 +30,8 @@ header {
 .block_tasks_task-body button, .block_tasks_task-body input {
     margin: 5px 0;
 }
+
+.block_function .block_tasks_task input{
+    width: 50%;
+    min-width: 200px
+}

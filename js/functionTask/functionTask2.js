@@ -3,7 +3,7 @@ function functionTask2() {
     if (str == ""){
         alert('Введите строку');
     } else {
-        alert('проверка на палиндром  ' + checkPalindrome_1(str));
+        alert('проверка на палиндром  ' + checkPalindrome_2(str));
     }
 }
 
@@ -29,13 +29,13 @@ function checkPalindrome_1(str){
 
 //второй способ
 function checkPalindrome_2(str){
-    var tempArr, text, reverseText;
+    var text, reverseText;
     if (str == "" ){ //если вызов не по клику на кнопку
         return false;
     }
 
     // регулярное выражение для "вытаскивания" только букв и цифр // приведенеие к одному регистру
-    text = str.replace(/[^a-zA-Zа-яА-Я0-9]/g, '').toLowerCase();
+    text = str.replace(/[^a-zA-Zа-яА-ЯЄ-Їa-zа-я0-9]/g, '').toLowerCase();
     //console.log(text);
 
     // переворот строки

@@ -17,7 +17,7 @@ function checkPalindrome_1(str){
 
     tempArr = str.split(/[:; ,.-_/*|\\()`'"?%@$^&<!=+>-]/); // убераем разделители из строки
     text = tempArr.join('').toLowerCase(); //собираем строку
-    reverseText = text.split('').reverse().join('').toLowerCase(); //переворачиваем строку
+    reverseText = text.split('').reverse().join(''); //переворачиваем строку
 
     if (text == reverseText){ //если строки одинаковыке, то это палиндром
             return true;
@@ -34,13 +34,19 @@ function checkPalindrome_2(str){
         return false;
     }
 
-    // регулярное выражение для "вытаскивания" только букв и цифр
-
-    // приведенеие к одному регистру
+    // регулярное выражение для "вытаскивания" только букв и цифр // приведенеие к одному регистру
+    text = str.replace(/[^a-zA-Zа-яА-Я0-9]/g, '').toLowerCase();
+    //console.log(text);
 
     // переворот строки
+    reverseText = text.split('').reverse().join(''); //переворачиваем строку
+    //console.log(reverseText);
 
     // проверка на сходство
-
+    if (text == reverseText){ //если строки одинаковыке, то это палиндром
+        return true;
+    }else {
+        return false;
+    }
 
 };

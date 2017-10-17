@@ -33,9 +33,7 @@ function itNumPrefect(n){
         }
     }
 
-    var sumArr = arrDiv.reduce(function(sum, current) {
-        return sum + current;
-    }, 0);
+    var sumArr = arrDiv.reduce((sum, current)=> { return sum + current; }, 0);
 
     if (n === sumArr){
         return true;

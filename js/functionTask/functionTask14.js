@@ -7,13 +7,13 @@ function functionTask14() {
    var coins = [25,10,5,2,1];
 
     if ( sum && coins.length > 0){
-        alert('результат: [' + amountToСoins(sum, coins) + ']' );
+        alert('результат: [' + amountToCoins(sum, coins) + ']' );
     } else {
         alert('Введите целое положительное число');
     }
 }
 
-function amountToСoins(sum, coins){
+function amountToCoins(sum, coins){
     let arrRes = [];
     let leftSum = sum;
 

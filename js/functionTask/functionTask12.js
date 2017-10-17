@@ -25,9 +25,11 @@ function itNumPrefect(n){
         return false;
     }
 
+    //sumArr = 1;
     for (var i = 2; i < n; i++) {
         if (n % i == 0){
             arrDiv.push(i);
+            //sumArr += i
         }
     }
 

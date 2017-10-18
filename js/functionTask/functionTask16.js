@@ -1,3 +1,5 @@
+'use strict';
+
 function functionTask16() {
     var str = document.getElementById("task_16").value;
     if (str == ""){

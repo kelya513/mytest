@@ -16,6 +16,19 @@ function arrayTask7() {
 }
 
 function sortArrayMy(arr) {
-    return arr.sort((a,b)=>{return a-b;}); //самое простое решение
+   // return arr.sort((a,b)=>{return a-b;}); //самое простое решение
+
+    //GnomeSort -алгоритм сортировки, похожий на сортировку вставками, но в отличие от последней перед
+    // вставкой на нужное место происходит серия обменов, как в сортировке пузырьком
+    var n = arr.length, i = 1, j = 2;
+    while (i < n)
+    { if (arr[i-1] < arr[ i ]){ i = j; j++; }
+    else
+    { var t = arr[i-1]; arr[i-1] = arr[ i ]; arr[ i ] = t;
+        i--;
+        if (i == 0){ i = j; j++; }
+    }
+    }
+    return arr;
 
 }

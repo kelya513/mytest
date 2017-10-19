@@ -18,7 +18,8 @@ function arrayTask3() {
 }
 
 function copyPartArr(arr,n) {
-    if( Array.isArray(arr) && (n >= 0)){
+    n =  n>=0 ? n : 1;
+    if( Array.isArray(arr) ){
         return arr.slice(0, n);
     }else{
         return 'it`s not array or error n';

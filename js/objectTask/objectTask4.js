@@ -22,10 +22,10 @@ function objectTask4() {
 }
 
 function progressLibraryObj(arr) {
-    for (var i = 0; i < arr.length; i++){
-        if((typeof arr[i] === typeof {})){
-            var progress = arr[i].readingStatus ? 'Прочитана' : 'Не была прочитана';
-            console.log( progress + ' книга '+ arr[i].title +' автора ' + arr[i].author);
+    for (let value of arr) {//for (var i = 0; i < arr.length; i++){
+        if((typeof value === typeof {})){
+            var progress = value.readingStatus ? 'Прочитана' : 'Не была прочитана';
+            console.log( `${progress} книга ${value.title} автора ${value.author}`);
         }else{
             console.log( 'это не объект');
         }

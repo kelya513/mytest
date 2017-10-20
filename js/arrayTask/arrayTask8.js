@@ -20,7 +20,7 @@ function arrayTask8() {
 function cntBigFreqArrayMy(arr) {
     var objHelp={};
 
-    //arr.foreach(val => objHelp[val] = isNaN(objHelp[val]) ? 1 : (objHelp[val] += 1)) ;
+    //arr.forEach(val => objHelp[val] = isNaN(objHelp[val]) ? 1 : (objHelp[val] += 1)) ;
     for (let key in arr) {
         objHelp[arr[key]] = isNaN(objHelp[arr[key]]) ? 1 : (objHelp[arr[key]] += 1);
     }

@@ -17,5 +17,6 @@ function deleteFalseValue(arr) {
     }
 
     return res;
+    //return res.filter((item)=>{return Boolean(item)})
 }
 

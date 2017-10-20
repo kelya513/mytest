@@ -8,7 +8,6 @@ function arrayTask18() {
         arr.push(rand);
     }
     arr.sort((a,b)=>{return a-b});
-    arr.filter( (value, index, self)=>{ return self.indexOf(value) === index;});
     var  n =  Math.floor(- 5.5 + Math.random() * 26);
     console.log(`исходный массив ${arr}`);
     console.log(`ищем ${n}: индекс ${arrayBinarySearch(arr, n)}`); // данные для проверки работы функции случайные

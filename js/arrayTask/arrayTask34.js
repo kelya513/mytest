@@ -2,7 +2,7 @@
 
 function arrayTask34(){
     console.log(`исходный массив ([43, 56, 23, 89, 88, 90, 99, 652], 4)`);
-    console.log(`result: ${findLargeNTN([43, 56, 23, 89, 88, 90, 99, 652], 3)}`);
+    console.log(`result: ${findLargeNTN([43, 56, 23, 89, 88, 90, 99, 652], 4)}`);
 }
 
 //без сортировки массива

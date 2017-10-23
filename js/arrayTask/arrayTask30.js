@@ -1,6 +1,6 @@
 'use strict';
 
-function arrayTask22(){
+function arrayTask30(){
     var arr1=[],arr2=[], size1, size2;
     size1 = Math.floor(Math.random() * 9) + 7;
     size2 = Math.floor(Math.random() * 9) + 7;
@@ -15,25 +15,22 @@ function arrayTask22(){
 
     console.log(`исходный массив1 ${arr1}`);
     console.log(`исходный массив2 ${arr2}`);
-    console.log(`result_1: ${createNewArrayNotDuplicate(arr1, arr2)}`);
-    console.log(`result_2: ${createNewArrayNotDuplicate2(arr1, arr2)}`);
+    console.log(`result: ${newArrayNotDuplicate30(arr1, arr2)}`);
 }
 
-function createNewArrayNotDuplicate(arr1, arr2) {
-    var res  = [].concat(...arr1, ...arr2);
-    return res.filter((value, index, self)=>{ return self.indexOf(value) === index;});
 
-}
-
-//второй способ
-function createNewArrayNotDuplicate2(arr1, arr2) {
+function newArrayNotDuplicate30(arr1, arr2) {
     var res =[];
-    var temp = [].concat(...arr1, ...arr2);
-    for(let val of temp){
-        if(res.indexOf(val) === -1){
-            res.push(val);
+    var temp = [].concat(...arr2, ...arr1);
+    var temp_obj ={};
+
+    for(var i=0; i < temp.length; i++){
+        if (!temp_obj[temp[i]]){
+            res.push(temp[i]);
+            temp_obj[temp[i]] = 1;
         }
     }
+
 
     return res;
 }

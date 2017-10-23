@@ -12,7 +12,7 @@ function arrayTask28(){
 
 function findLongSubstring(arr) {
     arr.sort((a,b)=>{return a.length < b.length});
-    var i = 0;
+    let i = 0;
 
     while(arr[0].charAt(i) == arr[1].charAt(i) && i < arr[0].length){
         i++;

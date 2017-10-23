@@ -15,6 +15,6 @@ function arrayTask33(){
 
 
 function delAllElemArray(arr) { // сама переменная остается, но значения елементов теряются.
-  //arr.length = 0;
-  arr.splice(0);
+  arr.length = 0;
+  // arr.splice(0);
 }

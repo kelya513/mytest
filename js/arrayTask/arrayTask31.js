@@ -16,7 +16,9 @@ function arrayTask31(){
 
 function removeElementArray(arr, value) {
     var index = arr.indexOf(value);
-    arr.splice(index, 1);
+    if (index >=0 ) {
+        arr.splice(index, 1);
+    }
     return arr;
 }
 

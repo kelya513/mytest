@@ -1,8 +1,7 @@
 'use strict';
 
 function arrayTask26(){
-
-    console.log(`исходный данные [10,20,10,40,50,60,70]50`);//${arr}
+    console.log(`исходный данные [10,20,10,40,50,60,70]50`);
     console.log(`result: ${twoSum([10,20,10,40,50,60,70],50)}`);
 }
 

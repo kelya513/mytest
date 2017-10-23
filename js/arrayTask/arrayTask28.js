@@ -4,7 +4,7 @@ function arrayTask28(){
     var str1 = document.getElementById("task_28_1").value;
     var str2 = document.getElementById("task_28_2").value;
     if (str1 !== '' && str1 !== ''){
-        console.log(`результат: ${findLongSubstring([str2, str1])}`);
+        console.log(`результат: ${findLongSubstring([str1, str2])}`);
     } else {
         alert('Введите строки');
     }

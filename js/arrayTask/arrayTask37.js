@@ -3,11 +3,11 @@
 function arrayTask37(){
 
     console.log(`массив с определенными данными(string)`);
-    console.log(`createFieldArray(5, 'str'): ${createFieldArray(5, 'str')}`);
-    console.log(`createFieldArray(3, 'test'): ${createFieldArray(3, 'test')}`);
+    console.log(`createFieldArray(5, 'str'): ${createFieldArrayStr(5, 'str')}`);
+    console.log(`createFieldArray(3, 'test'): ${createFieldArrayStr(3, 'test')}`);
 }
 
-function createFieldArray(cnt, str){
+function createFieldArrayStr(cnt, str){
     var arr = new Array(cnt);
     return arr.fill(str);
 }

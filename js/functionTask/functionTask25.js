@@ -1,7 +1,7 @@
 'use strict';
 function functionTask25() {
     var arr_Contry = ['Австралия', 'Германия', 'Соединенные Штаты Америки', 'Великобритания', 'Южная Корея' ];
-    alert('Исходный массив: '+ arr_Contry + '. ____Результат: ' + longNameCountry(arr_Contry));
+    alert(`Результат: ${longNameCountry(arr_Contry)}`);
 }
 
 function longNameCountry(arr) {

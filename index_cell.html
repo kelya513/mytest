@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 10px;
+            height: 10px;
+            border: 1px solid;
+        }
+
+        td.one {
+            background: #f18a8a;
+        }
+
+        td.zero {
+            background: #c6ea9b;
+        }
+    </style>
+</head>
+<body>
+
+<div id="add_tb">
+
+</div>
+
+<script>
+    function createMatrixCell(n) {
+        if (n<=0) n=1;
+
+        let table='<table>';
+        let arr=[];
+
+        for(let j=0; j<4; j++ ){
+            table += '<tr>';
+            let row=[];
+            let cnt=1;
+            let st_ind = j==3 ? 0 : 2*j;
+            for(let i=0;i <= 8*n ; i++){
+                if (cnt < 4 && i == st_ind){
+                    table += '<td class="one"></td>';
+                    row.push(1);
+                    cnt++;
+                    if (j == 3 && st_ind % 8 == 0 ){
+                        st_ind += 6 ;
+                    }else{
+                        st_ind++;
+                    }
+
+                }else{
+                    table += '<td class="zero"></td>';
+                    row.push(0);
+                }
+
+                if( ((i+1) % 8) == 0 ){
+                    cnt = 1;
+                    st_ind = j == 3 ? i+1 : i+1 + 2*j;
+                }
+            }
+            arr.push(row);
+            table += '</tr>';
+        }
+
+        table +='</table>';
+
+        console.log(arr);
+        let elem = document.getElementById('add_tb');
+        elem.innerHTML += table;
+    }
+
+    createMatrixCell(3);
+</script>
+
+</body>
+</html>
